@@ -25,5 +25,27 @@ matcherView = {
 			matcherController.selectCard( $(this).data('card-id') )	
 		});
 	},
+
+	revealCard: function( id ) {
+		$('#card-' + id).addClass('revealed');
+	},
+
+	setCorrect: function( id ) {
+		$('#card-' + id).addClass('correct');
+		$('#card-' + id).off('click');
+	},
+
+	hideCards: function(  ) {
+		$('.card').not('.correct').removeClass('revealed');
+	},
+
+	updateGameView: function(  ) {
+		$('#game-state-text').text( this.model.gameStateText );
+		$('#num-guesses').text( this.model.numGuesses );
+		$('#total-cards').text( this.model.cards.length );
+		$('#matched-cards').text( this.model.matchedCards );
+	},
+
+
 };
 
