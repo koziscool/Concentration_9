@@ -1,2 +1,7 @@
 
+matcherView = {
+	init: function(  ) {
+		
+	},
+};
 

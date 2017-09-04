@@ -1,2 +1,7 @@
 
+matcherModel = {
+	init: function( size ) {
+		
+	},
+};
 
