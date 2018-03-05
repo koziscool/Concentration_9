@@ -7,6 +7,7 @@ matcherModel = {
 	selectedCard: null,
 	numGuesses: 0,
 	matchedCards: 0,
+	gameStateText = "You haven't won yet, pick a card.",
 
 
 	init: function( size ) {
